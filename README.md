@@ -2,13 +2,10 @@
 
 A [Remotion](https://www.remotion.dev/) template for iceberg-style reveal videos: the camera starts zoomed in at the top of a background image, pans downward while label pills appear one by one, then zooms back out to show the full picture. The outro reverses the sequence in a seamless boomerang loop.
 
-<p align="center">
-  <img src="assets/template01.png" width="49%" />
-  <img src="assets/template02.png" width="49%" />
-  <br/>
-  <img src="assets/template03.png" width="49%" />
-  <img src="assets/template04.png" width="49%" />
-</p>
+| | |
+|:---:|:---:|
+| ![](assets/template01.png) | ![](assets/template02.png) |
+| ![](assets/template03.png) | ![](assets/template04.png) |
 
 ## Using with an AI agent
 
@@ -33,10 +30,10 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to preview in Remotion Studio.
 
-<p align="center">
-  <img src="assets/RemotionStudio01.png" width="100%" />
-  <img src="assets/RemotionStudio02.png" width="100%" />
-</p>
+| |
+|:---:|
+| ![](assets/RemotionStudio01.png) |
+| ![](assets/RemotionStudio02.png) |
 
 ## Adding a background image
 
