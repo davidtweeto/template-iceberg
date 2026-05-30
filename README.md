@@ -1,6 +1,20 @@
 # template-iceberg
 
-A Remotion template for iceberg-style reveal videos: the camera starts zoomed in at the top of a background image, pans downward while label pills appear one by one, then zooms back out to show the full picture. The outro reverses the sequence in a seamless boomerang loop.
+A [Remotion](https://www.remotion.dev/) template for iceberg-style reveal videos: the camera starts zoomed in at the top of a background image, pans downward while label pills appear one by one, then zooms back out to show the full picture. The outro reverses the sequence in a seamless boomerang loop.
+
+## Using with an AI agent
+
+Give this single line to Claude Code, Gemini, Codex, or any coding agent and it will know exactly what to do:
+
+```
+Clone https://github.com/davidtweeto/template-iceberg, run npm install, then edit the defaultProps in src/Root.tsx to set the title, labels, and backgroundFile, and run npm run dev to preview in Remotion Studio.
+```
+
+For best results, also install the Remotion skill so your agent has deep Remotion domain knowledge:
+
+```bash
+npx skills add remotion-dev/skills
+```
 
 ## Quick start
 
@@ -63,3 +77,10 @@ src/
 public/
   iceberg.jpg       — Default background image
 ```
+
+## Built with Remotion
+
+This template is built on [Remotion](https://www.remotion.dev/) — a framework for creating videos programmatically in React.
+
+- Website: [remotion.dev](https://www.remotion.dev/)
+- GitHub: [github.com/remotion-dev/remotion](https://github.com/remotion-dev/remotion)
