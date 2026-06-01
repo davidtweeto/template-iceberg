@@ -397,16 +397,25 @@ export const IcebergComposition: React.FC<IcebergProps> = ({
           position: "absolute",
           bottom: 3,
           left: 14,
-          color: "#ffffff",
           opacity: 0.25,
-          fontSize: 28,
-          fontWeight: 600,
-          fontFamily: resolvedFont,
-          letterSpacing: "0.05em",
+          display: "flex",
+          alignItems: "center",
+          gap: 8,
           pointerEvents: "none",
         }}
       >
-        tweeto
+        <img src={staticFile("LinkedIn_icon.svg")} style={{ width: 32, height: 32 }} />
+        <span
+          style={{
+            color: "#ffffff",
+            fontSize: 32,
+            fontWeight: 600,
+            fontFamily: resolvedFont,
+            letterSpacing: "0.05em",
+          }}
+        >
+          tweeto
+        </span>
       </div>
     </AbsoluteFill>
   );
