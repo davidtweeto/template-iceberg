@@ -79,8 +79,6 @@ export const IcebergSchema = z.object({
     point6: z.string(),
     point7: z.string(),
     point8: z.string(),
-    /** Watermark in the bottom-left corner. Leave empty to hide. */
-    watermark: z.string(),
   }),
 
   /** Layout and timing for the label pills. */
@@ -153,7 +151,7 @@ const TIP_IN_END = TIP_IN_START + 12;
 export const IcebergComposition: React.FC<IcebergProps> = ({
   camera: { zoomLevel, introHoldSecs, panDurationSecs, zoomOutDurationSecs, outroHoldSecs },
   title: { text: titleText, titleY, titleFontSize },
-  labels: { tipText, point1, point2, point3, point4, point5, point6, point7, point8, watermark },
+  labels: { tipText, point1, point2, point3, point4, point5, point6, point7, point8 },
   layout: { pointsStartY, pointSpacing, fontSize, firstLabelFrame },
   backgroundFile,
   fontFamily,
@@ -393,25 +391,23 @@ export const IcebergComposition: React.FC<IcebergProps> = ({
         ))}
       </div>
 
-      {/* Watermark: screen space, unaffected by camera. Hidden when empty. */}
-      {watermark ? (
-        <div
-          style={{
-            position: "absolute",
-            bottom: 3,
-            left: 14,
-            color: "#ffffff",
-            opacity: 0.25,
-            fontSize: 28,
-            fontWeight: 600,
-            fontFamily: resolvedFont,
-            letterSpacing: "0.05em",
-            pointerEvents: "none",
-          }}
-        >
-          {watermark}
-        </div>
-      ) : null}
+      {/* Watermark: screen space, unaffected by camera. */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 3,
+          left: 14,
+          color: "#ffffff",
+          opacity: 0.25,
+          fontSize: 28,
+          fontWeight: 600,
+          fontFamily: resolvedFont,
+          letterSpacing: "0.05em",
+          pointerEvents: "none",
+        }}
+      >
+        tweeto
+      </div>
     </AbsoluteFill>
   );
 };
