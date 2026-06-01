@@ -43,7 +43,6 @@ export const RemotionRoot: React.FC = () => {
           point6: "🔍 Hidden factor six",
           point7: "🔍 Hidden factor seven",
           point8: "🔍 Hidden factor eight",
-          watermark: "tweeto",
         },
         layout: { pointsStartY: 390, pointSpacing: 90, fontSize: 20, firstLabelFrame: 195 },
         backgroundFile: "iceberg.jpg",
